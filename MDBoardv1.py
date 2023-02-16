@@ -12,10 +12,11 @@ def MIDItochar(inputNum):
     # backspace
     elif(inputNum == 59):
         outputChar = "backspace"
+    # lower case chars
     elif(inputNum >= 60 and inputNum < 86):
         outputChar = chr(inputNum + 37)
     
-    print(outputChar)
+    # print(outputChar)
     return outputChar
 
 def MIDItoStroke(note):
@@ -27,7 +28,7 @@ def MIDItoStroke(note):
 with mido.open_input() as inport:
     for msg in inport:
         if (msg.type == 'note_on'):
-            print(msg.note)
+            # print(msg.note)
             MIDItoStroke(msg.note)
 """
 TODO
