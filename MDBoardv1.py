@@ -36,6 +36,8 @@ TODO
 1. use chord as dictionary or create hot keys for vsts
 
 2. add a note to start and stop typing, use bool
+
+3. creates a 2d array as dictionary, each octave is a row
 """
 
 
